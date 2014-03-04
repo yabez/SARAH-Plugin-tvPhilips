@@ -1,0 +1,92 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleVera" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+ <rule id="ruleVera" scope="public">
+  <example>Sarah lumiere !</example>
+  <tag>out.action=new Object(); </tag>
+  <item weight="2">Sarah</item>
+	<one-of>
+	<item>met la une <tag> out.action.commande="key:Digit1"; </tag></item>
+	<item>met T F un <tag> out.action.commande="key:Digit1"; </tag></item>
+	<item>met la deux <tag> out.action.commande="key:Digit2"; </tag></item>
+	<item>met France deux <tag> out.action.commande="key:Digit2"; </tag></item>
+	<item>met la trois <tag> out.action.commande="key:Digit0,key:Digit3"; </tag></item>
+	<item>met France trois <tag> out.action.commande="key:Digit0,key:Digit3"; </tag></item>
+	<item>met la quatre <tag> out.action.commande="key:Digit0,key:Digit4"; </tag></item>
+	<item>met Canal plus<tag> out.action.commande="key:Digit0,key:Digit4"; </tag></item>
+	<item>met la cinq <tag> out.action.commande="key:Digit0,key:Digit5"; </tag></item>
+	<item>met France cinq <tag> out.action.commande="key:Digit0,key:Digit5"; </tag></item>
+	<item>met la six <tag> out.action.commande="key:Digit0,key:Digit6"; </tag></item>
+	<item>met aime six <tag> out.action.commande="key:Digit0,key:Digit6"; </tag></item>
+	<item>met la sept <tag> out.action.commande="key:Digit0,key:Digit7"; </tag></item>
+	<item>met Arté <tag> out.action.commande="key:Digit0,key:Digit7"; </tag></item>
+	<item>met la huit <tag> out.action.commande="key:Digit0,key:Digit8"; </tag></item>
+	<item>met des huit <tag> out.action.commande="key:Digit0,key:Digit8"; </tag></item>
+	<item>met la neuf <tag> out.action.commande="key:Digit0,key:Digit9"; </tag></item>
+	<item>met W neuf <tag> out.action.commande="key:Digit0,key:Digit9"; </tag></item>
+	<item>met la dix <tag> out.action.commande="key:Digit1,key:Digit0"; </tag></item>
+	<item>met TMC <tag> out.action.commande="key:Digit1,key:Digit0"; </tag></item>
+	<item>met la onze <tag> out.action.commande="key:Digit1,key:Digit1"; </tag></item>
+	<item>met NT un <tag> out.action.commande="key:Digit1,key:Digit1"; </tag></item>
+	<item>met la douze <tag> out.action.commande="key:Digit1,key:Digit2"; </tag></item>
+	<item>met NRJ douze <tag> out.action.commande="key:Digit1,key:Digit2"; </tag></item>
+	<item>met la treize <tag> out.action.commande="key:Digit1,key:Digit3"; </tag></item>
+	<item>met la parlementaire <tag> out.action.commande="key:Digit1,key:Digit3"; </tag></item>
+	<item>met la quatorze <tag> out.action.commande="key:Digit1,key:Digit4"; </tag></item>
+	<item>met France quatre <tag> out.action.commande="key:Digit1,key:Digit4"; </tag></item>
+	<item>met la quinze <tag> out.action.commande="key:Digit1,key:Digit5"; </tag></item>
+	<item>met BFM TV<tag> out.action.commande="key:Digit1,key:Digit5"; </tag></item>
+	<item>met la seize <tag> out.action.commande="key:Digit1,key:Digit6"; </tag></item>
+	<item>met hi télé <tag> out.action.commande="key:Digit1,key:Digit6"; </tag></item>
+	<item>met la dix-sept <tag> out.action.commande="key:Digit1,key:Digit7"; </tag></item>
+	<item>met D dix sept <tag> out.action.commande="key:Digit1,key:Digit7"; </tag></item>
+	<item>met la dix huit <tag> out.action.commande="key:Digit1,key:Digit8"; </tag></item>
+	<item>met Gulli <tag> out.action.commande="key:Digit1,key:Digit8"; </tag></item>
+	<item>met la dix neuf <tag> out.action.commande="key:Digit1,key:Digit9"; </tag></item>
+	<item>met France ho <tag> out.action.commande="key:Digit1,key:Digit9"; </tag></item>
+	<item>met la vingt <tag> out.action.commande="key:Digit2,key:Digit0"; </tag></item>
+	<item>met la vingt et un<tag> out.action.commande="key:Digit2,key:Digit1"; </tag></item>
+	<item>met la vingt deux<tag> out.action.commande="key:Digit2,key:Digit2"; </tag></item>
+	<item>met la vingt trois<tag> out.action.commande="key:Digit2,key:Digit3"; </tag></item>
+	<item>met la vingt quatre<tag> out.action.commande="key:Digit2,key:Digit4"; </tag></item>
+	<item>met la vingt cinq<tag> out.action.commande="key:Digit2,key:Digit5"; </tag></item>
+	<item>met la vingt six<tag> out.action.commande="key:Digit2,key:Digit6"; </tag></item>
+	<item>met la vingt sept<tag> out.action.commande="key:Digit2,key:Digit7"; </tag></item>
+	<item>met la vingt huit<tag> out.action.commande="key:Digit2,key:Digit8"; </tag></item>
+	<item>met la vingt neuf <tag> out.action.commande="key:Digit2,key:Digit9"; </tag></item>
+	<item>monte le son <tag> out.action.commande="key:VolumeUp,key:VolumeUp,key:VolumeUp,key:VolumeUp,key:VolumeUp"; </tag></item>
+	<item>baisse le son <tag> out.action.commande="key:VolumeDown,key:VolumeDown,key:VolumeDown,key:VolumeDown,key:VolumeDown"; </tag></item>
+	<item>coupe le son <tag> out.action.commande="key:Mute"; </tag></item>
+	<item>remet le son <tag> out.action.commande="key:Mute"; </tag></item>
+	<item>éteint la télé <tag> out.action.commande="key:Standby"; </tag></item>
+	<item>ambilaite <tag> out.action.commande="key:AmbilightOnOff"; </tag></item>
+	
+	<!-- Exemple de "Modification source" -->
+	<item>affiche la télé <tag> out.action.commande="source:tv"; </tag></item>
+	<item>affiche H D M I un <tag> out.action.commande="source:hdmi1"; </tag></item>
+	<item>affiche H D M I deux <tag> out.action.commande="source:hdmi2"; </tag></item>
+	<item>affiche H D M I trois <tag> out.action.commande="source:hdmi3"; </tag></item>
+	<item>affiche H D M I slide <tag> out.action.commande="source:hdmiside"; </tag></item>
+	<item>affiche numericable <tag> out.action.commande="source:hdmi1"; </tag></item>
+	<item>affiche l'ordi <tag> out.action.commande="source:hdmi2"; </tag></item>
+	<item>affiche la console <tag> out.action.commande="source:hdmi3"; </tag></item>
+	<item>affiche le chromecast <tag> out.action.commande="source:hdmiside"; </tag></item>
+	<item>affiche ext un <tag> out.action.commande="source:EXT 1"; </tag></item>
+	<item>affiche y pb pr <tag> out.action.commande="source:ypbpr"; </tag></item>
+	<item>affiche V G A <tag> out.action.commande="source:vga"; </tag></item>
+	
+	<!-- Exemple de "Modification source" -->
+	<item>met une ambiance normal<tag> out.action.commande="ambilight:internal"; </tag></item>
+	<item>met une ambiance expert<tag> out.action.commande="ambilight:expert"; </tag></item>
+	<item>met une ambiance rouge<tag> out.action.commande="ambilight:manual,couleur:ff0000"; </tag></item>
+	<item>met une ambiance vert<tag> out.action.commande="ambilight:manual,couleur:00ff00"; </tag></item>
+	<item>met une ambiance bleu<tag> out.action.commande="ambilight:manual,couleur:0000ff"; </tag></item>
+	<item>met une ambiance jaune<tag> out.action.commande="ambilight:manual,couleur:ffff00"; </tag></item>
+	<item>met une ambiance violet<tag> out.action.commande="ambilight:manual,couleur:ff00ff"; </tag></item>
+	<item>met une ambiance bleu<tag> out.action.commande="ambilight:manual,couleur:0000ff"; </tag></item>
+	<item>met une ambiance cyan<tag> out.action.commande="ambilight:manual,couleur:00ffff"; </tag></item>
+	<item>met une ambiance orange<tag> out.action.commande="ambilight:manual,couleur:FF8000"; </tag></item>
+	
+	
+	</one-of>
+  <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/tvPhilips";</tag>
+ </rule>
+</grammar>
